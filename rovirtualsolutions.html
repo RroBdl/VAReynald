@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VA|Reynald Ontong</title>
+  <style>
+    :root {
+      --bg-dark: #0c0106f3;
+      --card-bg: #1f1f1f;
+      --text-light: #e0e0e0;
+      --primary: #bb86fc;
+      --secondary: #03dac6;
+      --accent: #2a3026;
+    }
+    /* Reset & Base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: var(--secondary); }
+    a:hover { color: var(--primary); }
+    ul { list-style: none; }
+
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* Profile Header */
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary);
+      margin: 0 auto 20px;
+      display: block;
+    }
+    h1 {
+      font-size: 2.8em;
+      color: var(--text-light);
+      margin-bottom: 10px;
+    }
+    h2.subtitle {
+      font-size: 1.4em;
+      color: var(--text-light);
+      margin-bottom: 40px;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      margin-bottom: 40px;
+      text-align: left;
+      transition: transform .2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+    .card h2 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    .card p, .card li {
+      color: var(--text-light);
+    }
+
+    /* Services Grid */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: var(--accent);
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform .2s, background .3s;
+      text-align: center;
+      border-top: 3px solid var(--secondary);
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+      background: var(--card-bg);
+      border-top-color: var(--primary);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--accent);
+      color: var(--text-light);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .footer-section {
+      margin-bottom: 30px;
+    }
+    .footer-section h3 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      color: var(--primary);
+    }
+    .footer-section p, .footer-section a {
+      font-size: 1em;
+      margin: 5px 0;
+    }
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Profile Header -->
+    <img src="rey.png" alt="Reynald Ontong" class="profile-img" />
+    <h1>Virtual Assistant</h1>
+    <h2 class="subtitle">Data Entry Specialist & Remote Admin Support</h2>
+
+    <!-- Bio -->
+    <div class="card">
+      <p>Hi! I’m a dedicated and detail‑oriented Virtual Assistant specializing in data entry and administrative support. I help entrepreneurs, business owners, and busy professionals stay organized and productive by managing essential tasks with accuracy and efficiency.</p>
+      <p>With strong time management skills, a sharp eye for detail, and a commitment to confidentiality, I consistently deliver reliable results on time. Whether it’s maintaining spreadsheets, organizing digital files, conducting research, or handling daily administrative tasks, I provide dependable support that helps streamline operations and free up your valuable time.</p>
+      <p>My goal is to simplify your workload so you can focus on what truly matters—growing your business with confidence.</p>
+    </div>
+
+    <!-- Services -->
+    <div class="card">
+      <h2>Services I Offer</h2>
+      <div class="services">
+        <div class="service-card">✅ Data Entry & Spreadsheet Management</div>
+        <div class="service-card">📧 Email & Calendar Management</div>
+        <div class="service-card">🔍 Online Research & Data Collection</div>
+        <div class="service-card">🗃️ File Organization & Admin Tasks</div>
+        <div class="service-card">💬 Customer Support Assistance</div>
+        <div class="service-card">📝 Typing & Transcription Services</div>
+      </div>
+    </div>
+
+    <!-- Free Trial -->
+    <div class="card">
+      <h2>Try My Services Free for 3 Days</h2>
+      <p>I’m offering a <strong>3‑day free trial</strong> of my data entry and admin support services—risk‑free and with no obligation.</p>
+      <p>This is your chance to experience the accuracy, confidentiality, and efficiency I bring to every task. I’m confident you’ll love the results.</p>
+      <ul style="padding-left:20px; max-width:600px; margin:0 auto;">
+        <li>✔ Spreadsheet data entry</li>
+        <li>✔ Database updates</li>
+        <li>✔ File organization</li>
+        <li>✔ Typing & transcription</li>
+        <li>✔ Simple research & record management</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <h3>Contacts</h3>
+      <p>📞 Phone: 09481396430</p>
+      <p>✉️ Email: <a href="mailto:ontongreynald@gmail.com">ontongreynald@gmail.com</a></p>
+    </div>
+    <div class="footer-section">
+      <h3>Socials</h3>
+      <p>Facebook: <a href="https://www.facebook.com/reynald.ontong.54" target="_blank">facebook.com/reynald.ontong.54</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/reynald-ontong-04829229b/" target="_blank">linkedin.com/in/reynald-ontong-04829229b</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
